@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DemoEncora</string>
+    <string name="home_frag">Home</string>
+    <string name="details">Mucis Details</string>
+    <string name="second_frag_from_2">Second Fragment From 2</string>
+    <string name="second_frag_from_1">Second fragment form 1</string>
+
+</resources>

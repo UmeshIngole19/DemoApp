@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="docsJob"
+            type="com.etpl.demoencora.model.Docs" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:padding="@dimen/_5sdp"
+        app:cardElevation="@dimen/_5sdp"
+        android:layout_margin="@dimen/_5sdp"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:clickable="false"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/_10sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:text="Id : "
+            android:layout_width="0dp" />
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:text="@{docsJob.id}" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:text="Publication Date : "
+            android:layout_width="0dp" />
+
+        <TextView
+            android:id="@+id/publicationDate"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:text="Article Type :"
+            android:layout_width="0dp" />
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:text="@{docsJob.article_type}" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:text="Abstract : "
+            android:layout_width="0dp" />
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:text="@{docsJob.abstractName[0]}" />
+        </LinearLayout>
+
+      <!--  <TextView
+            android:id="@+id/publicationDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/articleType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:text="@{`Article Type : ` + docsJob.article_type}" />
+
+        <TextView
+            android:id="@+id/articleParse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:text="@{`Adstract Name: ` + docsJob.abstractName[0]}" />-->
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</layout>
